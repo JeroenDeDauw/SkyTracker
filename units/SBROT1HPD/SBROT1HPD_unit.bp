@@ -63,10 +63,10 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    MeshName = '/mods/TotalMayhem/units/BROT1HPD/BROT1HPD_LOD0.scm',
-                    AlbedoName = '/mods/TotalMayhem/units/BROT1HPD/BROT1HPD_Albedo.dds',
-                    SpecularName = '/mods/TotalMayhem/units/BROT1HPD/BROT1HPD_SpecTeam.dds',
-                    NormalsName = '/mods/TotalMayhem/units/BROT1HPD/BROT1HPD_normalsTS.dds',
+                    MeshName = '/mods/SkyTracker/units/SBROT1HPD/BROT1HPD_LOD0.scm',
+                    AlbedoName = '/mods/SkyTracker/units/SBROT1HPD/BROT1HPD_Albedo.dds',
+                    SpecularName = '/mods/SkyTracker/units/SBROT1HPD/BROT1HPD_SpecTeam.dds',
+                    NormalsName = '/mods/SkyTracker/units/SBROT1HPD/BROT1HPD_normalsTS.dds',
                     LODCutoff = 270,
                     ShaderName = 'Unit',
                 },
