@@ -1,11 +1,9 @@
 local TStructureUnit = import('/lua/terranunits.lua').TStructureUnit
-local TMAmizurabluelaserweapon = import('/mods/SkyTracker/lua/TMAeonWeapons.lua').TMAmizurabluelaserweapon
 local TMEffectTemplate = import('/mods/SkyTracker/lua/TMEffectTemplates.lua')
 
-SBROT1HPD = Class(TStructureUnit) {
+TypeClass = Class(TStructureUnit) {
     Weapons = {
-        laserblue = Class(TMAmizurabluelaserweapon) {
-        },
+        laserblue = import('/mods/SkyTracker/lua/TMAeonWeapons.lua').TMAmizurabluelaserweapon,
     },
     OnKilled = function(self, instigator, damagetype, overkillRatio)
         TStructureUnit.OnKilled(self, instigator, damagetype, overkillRatio)
@@ -14,10 +12,8 @@ SBROT1HPD = Class(TStructureUnit) {
 
     CreatTheEffectsDeath = function(self)
         local army =  self:GetArmy()
-        for k, v in TMEffectTemplate['AeonUnitDeathRing03'] do
+        for _, v in TMEffectTemplate['AeonUnitDeathRing03'] do
             self.Trash:Add(CreateAttachedEmitter(self, 'BROT1HPD', army, v):ScaleEmitter(2.95))
         end
-    end,
+    end
 }
-
-TypeClass = SBROT1HPD

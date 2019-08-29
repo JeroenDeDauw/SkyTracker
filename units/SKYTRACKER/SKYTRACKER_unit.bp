@@ -63,10 +63,10 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    MeshName = '/mods/SkyTracker/units/SBROT1HPD/BROT1HPD_LOD0.scm',
-                    AlbedoName = '/mods/SkyTracker/units/SBROT1HPD/BROT1HPD_Albedo.dds',
-                    SpecularName = '/mods/SkyTracker/units/SBROT1HPD/BROT1HPD_SpecTeam.dds',
-                    NormalsName = '/mods/SkyTracker/units/SBROT1HPD/BROT1HPD_normalsTS.dds',
+                    MeshName = '/mods/SkyTracker/units/SKYTRACKER/SKYTRACKER_LOD0.scm',
+                    AlbedoName = '/mods/SkyTracker/units/SKYTRACKER/SKYTRACKER_Albedo.dds',
+                    SpecularName = '/mods/SkyTracker/units/SKYTRACKER/SKYTRACKER_SpecTeam.dds',
+                    NormalsName = '/mods/SkyTracker/units/SKYTRACKER/SKYTRACKER_normalsTS.dds',
                     LODCutoff = 270,
                     ShaderName = 'Unit',
                 },
@@ -98,7 +98,7 @@ UnitBlueprint {
         BuildCostMass = 4900,
         BuildTime = 3270,
         RebuildBonusIds = {
-            'SBROT1HPD',
+            'SKYTRACKER',
         },
     },
     Footprint = {
